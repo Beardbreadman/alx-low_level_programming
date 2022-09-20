@@ -1,10 +1,15 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
+
+/**
+ * void prototype()
+ * int prototype()
+ */
 
 void rest_to_98(int *n);
 void swap_int(int *j, int *k);
 int _strlen(char *s);
-void puts(char *str);
+void _puts(char *str);
 int _putchar(char);
 void print_rev(char *s);
 void rev_string(char *s);
@@ -12,4 +17,6 @@ void puts2(char *str);
 void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
-int _atoi(
+int _atoi(char *str);
+
+#endif /*MAIN_H*/	

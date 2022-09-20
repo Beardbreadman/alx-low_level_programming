@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - swaps the values of two integers
@@ -6,7 +6,9 @@
  * @k: second integer
  * Return: void
  */
+
 void swap_int(int *j, int *k)
+
 {
 	int c = *j;
 	*j = *k;

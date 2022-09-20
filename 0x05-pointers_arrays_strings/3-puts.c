@@ -1,11 +1,13 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * _puts - print a string, following by a new line
  * @str: input string
  * Return: void
  */
+
 void _puts(char *str)
+
 {
 	int count = 0;
 
@@ -13,7 +15,7 @@ void _puts(char *str)
 	{
 		if (str[count] == '\0')
 		{
-			_putchar('\n\)
+			_putchar('\n');
 			break;
 			
 		}
