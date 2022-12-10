@@ -2,18 +2,18 @@
 
 /**
  * main - print reversed alphabet
- *
+ * Description: print lowercase alphabets a-z in inverse
  * Return: Always 0
  */
 
 int main(void)
-
 {
-	int i;
+	char ch = 'z';
 
-	for (i = 122; i > 96; i--)
+	while (ch >= 'a')
 	{
-		putchar(i);
+		putchar(ch);
+		--ch;
 	}
 	putchar('\n');	
 	return (0);
