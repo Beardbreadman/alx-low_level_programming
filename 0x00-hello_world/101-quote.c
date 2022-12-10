@@ -1,15 +1,22 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
- * Main -print quote
- *
- * Description: prints Dora's quote
- *
- * Return: Always 1 (success)
- */
+ *  main - prints to string
+ *  Description: prints text without puts
+ *  Return: 1
+*/
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korar, 2015-10-19\n"' 59);
-	return (1);
+char *s = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+long l = 59;
+long fd = 1;
+long syscall = 1;
+long ret = 0;
+__asm__ ("syscall"
+: "=a" (ret)
+: "a" (syscall),
+"D" (fd),
+"S" (s),
+"d" (l));
+return (1);
 }
