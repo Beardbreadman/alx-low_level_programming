@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - print reversed alphabet
- * Description: print lowercase alphabets a-z in inverse
- * Return: Always 0
- */
+ * main - Entry point
+ * Description: print lowercase alphabet a-z in reverse
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
@@ -15,6 +15,6 @@ int main(void)
 		putchar(ch);
 		--ch;
 	}
-	putchar('\n');	
+	putchar('\n');
 	return (0);
 }
