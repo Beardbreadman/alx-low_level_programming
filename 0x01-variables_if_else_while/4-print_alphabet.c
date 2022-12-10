@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - prints the alphabet without q and e
- * Return: Always 0
- */
+ * main - Entry point
+ * Description: print all aplhabet letters except q and e
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
@@ -14,8 +15,8 @@ int main(void)
 		if (ch == 'e' || ch == 'q')
 			++ch;
 		putchar(ch);
-		++ch
+		++ch;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
