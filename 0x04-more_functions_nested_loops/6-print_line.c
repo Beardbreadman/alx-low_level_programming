@@ -1,22 +1,20 @@
-#include  <stdio.h>
 #include "main.h"
 
 /**
- * print_line - print straight line n times
- * @n: times straight line is printed
- * Return: no return
+ * print_line - printing lines
+ * @n: number of times
+ *
+ * Return: void
  */
 
-void print_line(int n)
 
+void print_line(int n)
 {
-	int i; 
-	
+	int i;
 
 	for (i = 0; i < n; i++)
 	{
-		_putchar(85);
+		_putchar('_');
 	}
 	_putchar('\n');
 }
-
