@@ -1,19 +1,27 @@
 #include "main.h"
 
 /**
- * _puts - prints a string
- * @str: the string
+ * print_rev - print a string in reverse
+ * @s: a string
  *
- * Return: the length of the string
+ * Return: string in reverse
  */
-void _puts(char *str)
+void print_rev(char *s)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (s[i] != 0)
 	{
-		_putchar(str[i]);
 		i++;
+	}
+	while (i > 0)
+	{
+		i--;
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
