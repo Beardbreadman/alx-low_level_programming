@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _memcpy - copies n bytes from memory area src to dest
- *
- * @src: source of copied bytes
- * @dest: destination of copied bytes
- * @n: no of bytes to be copied
- *
- * Return: retusns dest
- */
+  * _memcpy - irontnoux2
+  *
+  * @dest: pointer to char params
+  * @src: pointer to char params
+  * @n: size
+  *
+  * Return: *dest
+  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {

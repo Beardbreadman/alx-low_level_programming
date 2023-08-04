@@ -1,25 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strpbrk - function locates the first occurence in the string
- * s of any of the bytes of string accept
+ * _strpbrk - bytes
  *
- * @s: string to be searched
- * @accept: strings that will be searched for
+ * @s: pointer to char
+ * @accept: pointer to char
  *
- * Return: s;
+ * Return: NULL
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	while (*s != '\0')
-	{
-		char *a = accept;
+	int i;
 
-		while (*a != '\0')
-			if (*a++ == *s)
-				return ((char *)s);
-		++s;
+	while (*s)
+	{
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			{
+				return (s);
+			}
+		}
+		s++;
 	}
-	return ('\0');
+	return (NULL);
 }
