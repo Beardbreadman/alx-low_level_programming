@@ -1,4 +1,4 @@
-Tasks
-0. 98 Battery st.
-Write a function that takes a pointer to an int as parameter and updates the value it points to to 98
+*C Pointers, Arrays and Strings*
 
+C Data Structures 
+Pointers and Arrays
